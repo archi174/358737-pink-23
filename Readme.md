@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Артур Алибаев](https://up.htmlacademy.ru/adaptive/23/user/358737).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://up.htmlacademy.ru/profession/frontender/11/adaptive/user/5608).
 
 ---
 
