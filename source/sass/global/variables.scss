@@ -2,10 +2,11 @@
 
 // Colors
 
-@white: #ffffff;
-@grayblue: background: #283645;
+$white: #ffffff;
+$grayblue: #283645;
 
 // Viewports
 
-@tablet-width: 660px;
-@desktop-width: 1200px;
+$mobile-width: 280px;
+$tablet-width: 620px;
+$desktop-width: 940px;
