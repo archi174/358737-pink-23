@@ -1,0 +1,78 @@
+.applications__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.applications__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+
+.application__download {
+  background-color: #1d2631;
+}
+
+.applications__buttom {
+  display: block;
+  width: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 29px;
+
+  &:hover,
+  &focus {
+    background-color: $white;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(#d22856, 0.3);
+  }
+}
+
+.applications-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.application__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.application__link--app-store {
+  background-image: url("../img/apple-logo.svg");
+}
+
+.application__link--google-play {
+  background-image: url("../img/android-logo.svg");
+}
+
+.application__link--microsoft-store {
+  background-image: url("../img/microsoft-logo.svg");
+}
+
+.application_text {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  text-align: center;
+}
