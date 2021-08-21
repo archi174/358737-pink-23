@@ -31,6 +31,7 @@
   color: inherit;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  outline: none;
 
   &:hover {
     border-color: $grayblue;
@@ -76,24 +77,125 @@
   }
 }
 
+
 .contest-form__input-radio {
-  &:hover + .contest-form__label::before,
-  &:focus + .contest-form__label::before {
-    border-color: $grayblue;
+  &:checked + .contest-form__label {
+    &::before {
+      border-color: #e5e5e5;
+      background-color: #ffffff;
+    }
   }
 }
 
-.contest-form__input-radio:active + .contest-form__label::before {
-  border-color: #d22856;
+.contest-form__input-radio {
+  &:hover + .contest-form__label,
+  &:checked:hover + .contest-form__label {
+    &::before {
+      border-color: $grayblue;
+    }
+  }
 }
 
-.contest-form__input-radio:checked + .contest-form__label::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 13px;
-  width: 15px;
-  height: 15px;
-  background-color: #D22856;
-  border-radius: 50%;
+.contest-form__input-radio {
+  &:active + .contest-form__label {
+    &::before {
+      border-color: #d22856;
+    }
+  }
+}
+
+.contest-form__input-radio {
+  &:checked + .contest-form__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 13px;
+      width: 15px;
+      height: 15px;
+      background-color: #d22856;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Contest-form Checkbox
+
+.contest-form__input-checkbox + .contest-form__label {
+  padding-left: 59px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.contest-form__input-checkbox {
+  &:checked + .contest-form__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 8px;
+      border-left: 2px solid #d22856;
+      border-bottom: 2px solid #d22856;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover + .contest-form__label {
+    &::before {
+      border-color: $grayblue;
+    }
+  }
+
+  &:active + .contest-form__label {
+    &::before {
+      border-color: #d22856;
+    }
+  }
+}
+
+// Button Submit
+
+.contest-form__button-submit {
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  color: #ffffff;
+  background-color: #2aab6b;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+
+  &:hover {
+    background: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.contest-form__text {
+  margin: 0;
+  margin-top: 44px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contest-form__text span {
+  color: #d22856;
 }
