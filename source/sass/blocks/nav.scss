@@ -27,7 +27,7 @@
   align-items: center;
   font-size: 18px;
   line-height: 32px;
-  font-weight: $font-bold;
+  font-weight: 700;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
-    font-weight: $font-normal;
+    font-weight: 400;
     text-transform: capitalize;
   }
 }
