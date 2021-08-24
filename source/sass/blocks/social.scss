@@ -11,16 +11,16 @@
   width: 48px;
   height: 48px;
   border-width: 3px;
-  border-color: rgba($grayblue, 0.3);
+  border-color: rgba($blue--darken, 0.1);
   border-style: solid;
   border-radius: 50%;
 
   &:hover,
   &:focus {
-    border-color: $grayblue;
+    border-color: $blue--darken;
   }
 
   &:active {
-    border-color: rgba($grayblue, 0.1);
+    border-color: rgba($blue--darken, 0.3);
   }
 }

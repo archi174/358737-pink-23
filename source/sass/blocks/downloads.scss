@@ -1,0 +1,67 @@
+// Downloads
+
+.downloads {
+  background-color: $blue--dark-extra;
+}
+
+.downloads__buttom {
+  display: block;
+  width: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 29px;
+
+  &:hover,
+  &focus {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+}
+
+.downloads__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.downloads__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.downloads__link--app-store {
+  background-image: url("../img/apple-logo.svg");
+}
+
+.downloads__link--google-play {
+  background-image: url("../img/android-logo.svg");
+}
+
+.downloads__link--microsoft-store {
+  background-image: url("../img/microsoft-logo.svg");
+}
+
+.downloads__text {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-light;
+  text-align: center;
+}

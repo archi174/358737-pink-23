@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $white;
   text-align: center;
 }
 
@@ -12,14 +12,14 @@
 .contacts__title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: $font-light;
   margin: 0;
   padding: 0;
 }
 
 .contacts__item {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: $font-bold;
   text-align: center;
 }
 
@@ -28,13 +28,14 @@
   justify-content: center;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 300;
-  color: #d22856;
+  font-weight: $font-light;
+  color: $link-color;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $grayblue;
+    color: $link-color--hover;
+    text-decoration: underline;
   }
 
   &:active {

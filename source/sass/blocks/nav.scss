@@ -1,5 +1,5 @@
 .nav {
-  background-color: $grayblue;
+  background-color: $blue--darken;
 }
 
 .nav__toggle {
@@ -27,14 +27,14 @@
   align-items: center;
   font-size: 18px;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: $font-bold;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: $link-color;
   }
 
   &:active {
@@ -45,7 +45,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: $font-normal;
     text-transform: capitalize;
   }
 }

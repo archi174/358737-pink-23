@@ -1,5 +1,5 @@
 .header {
-  background-color: #1e3246;
+  background-color: $blue--darken;
   color: $white;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .header__top-menu {
-  background-color: rgba(#000000, 0.3);
+  background-color: rgb ($black, 0.3);
 }
 
 .header__logo-image {
@@ -28,6 +28,6 @@
   margin: 0 auto;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 300;
+  font-weight: $font-light;
   text-align: center;
 }

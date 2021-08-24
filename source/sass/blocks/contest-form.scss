@@ -7,7 +7,7 @@
 
 .contest-form__legend {
   line-height: 18px;
-  color: #d22856;
+  color: $legend-color;
   text-align: center;
   text-transform: uppercase;
 }
@@ -15,7 +15,7 @@
 .contest-form__label {
   display: inline-block;
   line-height: 30px;
-  color: #d22856;
+  color: $label-color;
   text-transform: uppercase;
 }
 
@@ -29,16 +29,16 @@
   font-size: 18px;
   line-height: 30px;
   color: inherit;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $input-color;
   border-radius: 1px;
   outline: none;
 
   &:hover {
-    border-color: $grayblue;
+    border-color: $input-color--hover;
   }
 
   &:focus {
-    border-color: #d22856;
+    border-color: $input-color--focus;
   }
 
   &::placeholder {
@@ -53,7 +53,7 @@
 }
 
 .contest-form__list .contest-form__label {
-  color: $grayblue;
+  color: $blue--darken;
   text-transform: initial;
 }
 
@@ -71,8 +71,8 @@
     left: 0;
     width: 37px;
     height: 37px;
-    color: #ffffff;
-    border: 2px solid #e5e5e5;
+    color: $white;
+    border: 2px solid $gray;
     border-radius: 50%;
   }
 }
@@ -81,8 +81,8 @@
 .contest-form__input-radio {
   &:checked + .contest-form__label {
     &::before {
-      border-color: #e5e5e5;
-      background-color: #ffffff;
+      border-color: $gray;
+      background-color: $white;
     }
   }
 }
@@ -91,7 +91,7 @@
   &:hover + .contest-form__label,
   &:checked:hover + .contest-form__label {
     &::before {
-      border-color: $grayblue;
+      border-color: $blue--darken;
     }
   }
 }
@@ -99,7 +99,7 @@
 .contest-form__input-radio {
   &:active + .contest-form__label {
     &::before {
-      border-color: #d22856;
+      border-color: $pink;
     }
   }
 }
@@ -113,7 +113,7 @@
       left: 13px;
       width: 15px;
       height: 15px;
-      background-color: #d22856;
+      background-color: $pink;
       border-radius: 50%;
     }
   }
@@ -133,8 +133,8 @@
     left: 0;
     width: 35px;
     height: 35px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    background-color: $white;
+    border: 2px solid $gray;
     border-radius: 1px;
   }
 }
@@ -148,21 +148,21 @@
       left: 10px;
       width: 20px;
       height: 8px;
-      border-left: 2px solid #d22856;
-      border-bottom: 2px solid #d22856;
+      border-left: 2px solid $pink;
+      border-bottom: 2px solid $pink;
       transform: rotate(-45deg);
     }
   }
 
   &:hover + .contest-form__label {
     &::before {
-      border-color: $grayblue;
+      border-color: $blue--darken;
     }
   }
 
   &:active + .contest-form__label {
     &::before {
-      border-color: #d22856;
+      border-color: $pink;
     }
   }
 }
@@ -173,18 +173,18 @@
   width: 100%;
   padding-top: 23px;
   padding-bottom: 23px;
-  color: #ffffff;
-  background-color: #2aab6b;
-  border: 2px solid #2aab6d;
+  color: $white;
+  background-color: $green--darken;
+  border: 2px solid $green--darken;
   border-radius: 1px;
 
   &:hover {
-    background: #1c9b5e;
-    border-color: #1c9b5e;
+    background: $green--dark;
+    border-color: $green--dark;
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3);
+    color: rgba($white, 0.3);
   }
 }
 
@@ -197,5 +197,5 @@
 }
 
 .contest-form__text span {
-  color: #d22856;
+  color: $pink;
 }

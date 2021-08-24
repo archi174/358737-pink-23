@@ -3,6 +3,7 @@
 @import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
+// @import "global/mixins.scss";
 @import "global/global.scss";
 
 // Blocks
@@ -12,8 +13,10 @@
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/applications.scss";
+@import "blocks/downloads.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
+@import "blocks/slider.scss";
 @import "blocks/rates.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
@@ -22,4 +25,6 @@
 @import "blocks/button.scss";
 @import "blocks/modal.scss";
 @import "blocks/gallery.scss";
+@import "blocks/gallery-item.scss";
 @import "blocks/image-editor.scss";
+@import "blocks/img-editor-form.scss";
