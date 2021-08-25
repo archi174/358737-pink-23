@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -11,11 +13,11 @@
     <div class="header__top-menu">
       <div class="header__wrapper">
         <a class="header__logo">
-          <img class="header__logo-image" src="img/logotype-mobile.svg" width="74" height="23"
+          <img class="header__logo-image" src="img/logotype.svg" width="74" height="23"
             alt="Мобильное приложение Pink">
         </a>
         <nav class="nav">
-          <button class="nav__toggle" type="button"><span class="visually_hidden">Открыть меню</span></button>
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current">Главная</a>
@@ -36,31 +38,31 @@
     <div class="applications">
       <div class="applications__wrapper">
         <p class="applications__title">Взгляните на жизнь иначе!</p>
-        <div class="application__download">
-          <a class="applications__buttom" href="#">Скачать приложение</a>
-          <ul class="applications-list">
-            <li class="application__item">
-              <a class="application__link application__link--app-store" href="#"><span class="visually-hidden">Скачать
+        <div class="downloads">
+          <a class="downloads__buttom" href="#">Скачать приложение</a>
+          <ul class="downloads__list">
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--app-store" href="#"><span class="visually-hidden">Скачать
                   для
                   iOS</span></a>
             </li>
-            <li class="application__item">
-              <a class="application__link application__link--google-play" href="#"><span class="visually-hidden">Скачать
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--google-play" href="#"><span class="visually-hidden">Скачать
                   для Andriod</span></a>
             </li>
-            <li class="application__item">
-              <a class="application__link application__link--microsoft-store" href="#"><span
+            <li class="downloads__item">
+              <a class="downloads__link downloads__link--microsoft-store" href="#"><span
                   class="visually-hidden">Скачать для Microsoft Phone</span></a>
             </li>
           </ul>
-          <p class="application_text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <h1 class="visually_hidden">Pink - мобильное приложение для расскрашивания серых будней в розовый цвет</h1>
+    <h1 class="visually-hidden">Pink - мобильное приложение для расскрашивания серых будней в розовый цвет</h1>
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества приложения</h2>
@@ -121,27 +123,27 @@
         <table class="rates__info slider__list">
           <tr>
             <th></th>
-            <th class="rates__title">База</th>
-            <th class="rates__title">Стандарт</th>
-            <th class="rates__title">Анлим</th>
+            <th class="rates__title">База<span class="rates__title-price">1,99 USD</span></th>
+            <th class="rates__title">Стандарт<span class="rates__title-price">3,99 USD</span></th>
+            <th class="rates__title">Анлим<span class="rates__title-price">9,99 USD</span></th>
           </tr>
           <tr>
             <td class="rates__function">Розовый фильтр</td>
-            <td class="rates__function-on"></td>
-            <td class="rates__function-on"></td>
-            <td class="rates__function-on"></td>
+            <td class="rates__function rates__function--on"></td>
+            <td class="rates__function rates__function--on"></td>
+            <td class="rates__function rates__function--on"></td>
           </tr>
           <tr>
             <td class="rates__function">Смайлики</td>
-            <td class="rates__function-off"></td>
-            <td class="rates__function-on"></td>
-            <td class="rates__function-on"></td>
+            <td class="rates__function rates__function--off"></td>
+            <td class="rates__function rates__function--on"></td>
+            <td class="rates__function rates__function--on"></td>
           </tr>
           <tr>
             <td class="rates__function">Комментарии</td>
-            <td class="rates__function-off"></td>
-            <td class="rates__function-off"></td>
-            <td class="rates__function-on"></td>
+            <td class="rates__function rates__function--off"></td>
+            <td class="rates__function rates__function--off"></td>
+            <td class="rates__function rates__function--on"></td>
           </tr>
         </table>
       </div>
@@ -149,15 +151,17 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты для связи</h2>
-        <div class="contacts__call">
+        <p class="contacts__title">Остались вопросы?</p>
+        <p class="contacts__title">Свяжитесь с нами!</p>
+        <div class="contacts__item contacts__item--call">
           Звоните:
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
-        <div class="contacts__mail">
+        <div class="contacts__item contacts__item--mail">
           Пишите:
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="contacts__adress">
+        <div class="contacts__item contacts__item--adress">
           Приезжайте в гости:
           <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
         </div>
@@ -176,13 +180,13 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Twitter</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Facebook</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в YouTube</a>
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в YouTube</span></a>
           </li>
         </ul>
       </div>

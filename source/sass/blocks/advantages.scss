@@ -1,0 +1,46 @@
+// Advantages
+
+.advantages {
+  background-color: $gray--light;
+  text-align: center;
+}
+
+.advantages__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.advantages__slogan {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: $black;
+}
+
+.advantages__effect-intro {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $black;
+}
+
+.advantages__effect-link {
+  color: $link-color;
+}

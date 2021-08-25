@@ -1,0 +1,36 @@
+// Rates
+
+.rates {
+  background-color: $gray--light;
+}
+
+.rates__info {
+  width: 100%;
+  border: 2px solid $gray;
+  border-collapse: collapse;
+}
+
+.rates__title {
+  width: 25%;
+  padding: 19px 10px 16px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $white;
+  background-color: $blue--darken;
+  text-transform: uppercase;
+  border: 2px solid $blue--darken;
+}
+
+.rates__title-price {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.rates__function {
+  width: 25%;
+  padding: 18px 15px;
+  background-color: $white;
+  border: 2px solid $gray;
+}

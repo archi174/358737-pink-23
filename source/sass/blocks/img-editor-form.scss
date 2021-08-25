@@ -1,0 +1,86 @@
+// Img-editor-form
+
+.img-editor-form {
+  padding-top: 20px;
+  background-color: $gray--light;
+}
+
+.img-editor-form__list-function {
+  margin: 0;
+  margin-top: 42px;
+  padding: 0;
+  list-style: none;
+}
+
+.img-editor-form__item {
+  border-bottom: 1px solid rgba($blue--darken, 0.3);
+}
+
+.img-editor-form__item-icon {
+  margin-bottom: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.img-editor-form__item-range-bar {
+  position: relative;
+  margin: 34px 20px;
+  height: 2px;
+  background-color: $blue--darken;
+}
+
+.img-editor-form__item-range-toggle {
+  position: absolute;
+  top: -5px;
+  left: 180px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-editor-form__btn {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: transparent;
+  text-transform: initial;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.img-editor-form__btn--submit {
+  margin-top: 38px;
+  margin-bottom: 12px;
+  color: $pink;
+  border: 3px solid $pink;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.img-editor-form__btn--reset {
+  margin-bottom: 41px;
+  color: $blue--darken;
+  border: 3px solid $blue--darken;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $blue--darken;
+  }
+}

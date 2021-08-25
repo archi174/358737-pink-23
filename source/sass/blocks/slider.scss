@@ -1,0 +1,43 @@
+// Slider
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  background-color: $blue--darken;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.3;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__togle--current {
+  background-color: $white;
+  border: 3px solid $blue--darken;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 3px solid $blue--darken;
+    opacity: 1;
+  }
+}

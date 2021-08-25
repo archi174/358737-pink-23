@@ -1,0 +1,51 @@
+.nav {
+  background-color: $blue--darken;
+}
+
+.nav__toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}

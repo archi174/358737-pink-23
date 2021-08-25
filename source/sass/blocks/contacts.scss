@@ -1,0 +1,44 @@
+.contacts {
+  background-color: $white;
+  text-align: center;
+}
+
+.contacts__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contacts__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color--hover;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
