@@ -1,3 +1,9 @@
 .copyright {
+  display: flex;
+  align-items: center;
   line-height: 18px;
+}
+
+.copyright__link {
+  line-height: 14px;
 }
