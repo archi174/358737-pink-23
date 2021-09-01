@@ -1,6 +1,8 @@
 // Reviews
 
 .reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
   line-height: 30px;
   background-color: $white;
   text-align: center;
@@ -10,15 +12,73 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.reviews__list {
+  margin-bottom: 40px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+.reviews__author-block {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 31px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__author-info {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.reviews__author-text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}
+
+.reviews__toggles {
   margin: 0;
 }

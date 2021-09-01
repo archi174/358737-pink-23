@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .slider__toggle {
@@ -29,7 +33,7 @@
   }
 }
 
-.slider__togle--current {
+.slider__toggle--current {
   background-color: $white;
   border: 3px solid $blue--darken;
   opacity: 1;
