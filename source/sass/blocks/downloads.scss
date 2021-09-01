@@ -2,6 +2,25 @@
 
 .downloads {
   background-color: $blue--dark-extra;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.downloads__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .downloads__buttom {
